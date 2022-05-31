@@ -6,6 +6,8 @@
   "scripts": {
     "prepare": "husky install",
     "eslint": "eslint --fix",
+    "stylelint": "stylelint 'packages/**/*.css' --fix",
+    "prettier": "prettier --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "GaoXiuMei",
@@ -26,15 +28,6 @@
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
     }
-  },
-  "lint-staged": {
-    "*.md": "prettier --write",
-    "*.{ts,tsx,js,vue,less}": "prettier --write",
-    "*.{ts,tsx,js,vue}": "eslint --fix",
-    "*.{vue,css,less}": "stylelint --fix",
-    "ignore": [
-      "**/dist/*.min.js"
-    ]
   },
   "packageManager": "pnpm@7.1.7"
 }

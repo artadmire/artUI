@@ -1,8 +1,9 @@
 import * as React from 'react';
+import './style.css';
 
 function Card() {
   return (
-    <div>
+    <div className='box'>
       Card
     </div>
   )
