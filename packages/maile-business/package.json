@@ -2,10 +2,11 @@
   "name": "react-components2",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c"
-  }, 
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.8",

@@ -9,12 +9,30 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.18.2",
     "@commitlint/config-conventional": "^16.2.1",
     "@umijs/fabric": "^2.10.2",
+    "@types/react": "^17.0.44",
     "commitizen": "^4.2.4",
     "commitlint": "^16.2.3",
-    "cz-lerna-changelog": "^2.0.3",
-    "husky": "^7.0.4",
-    "lerna": "^4.0.0"
-  }
+    "husky": "^7.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.+(scss|css)": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add ."
+    ],
+    "src/**/*.+(js|ts|tsx|)": [
+      "prettier --write",
+      "eslint --fix",
+      "git add ."
+    ]
+  },
+  "packageManager": "pnpm@7.1.7"
 }

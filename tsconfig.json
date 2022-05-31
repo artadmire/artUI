@@ -1,10 +1,12 @@
 {
-  "compilerOptions":
-  {
+  "compilerOptions": {
     "outDir": "dist",
     "module": "commonjs",
     "target": "es5",
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "baseUrl": ".",
     "jsx": "react",
     "resolveJsonModule": true,
@@ -19,6 +21,13 @@
     "skipLibCheck": true,
     "declaration": true
   },
-  "exclude": ["node_modules", "build", "dist"]
+  "types": [
+    "node",
+    "react"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
+  ]
 }
-
