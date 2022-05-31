@@ -6,16 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "GaoXiuMei",
   "license": "ISC",
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.18.2",
-    "@commitlint/config-conventional": "^16.2.1",
-    "@umijs/fabric": "^2.10.2",
     "@types/react": "^17.0.44",
-    "commitizen": "^4.2.4",
-    "commitlint": "^16.2.3",
-    "husky": "^7.0.4"
+    "@umijs/fabric": "^2.10.2",
+    "eslint": "^8.16.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.3",
+    "stylelint": "^14.8.5"
   },
   "husky": {
     "hooks": {
@@ -23,16 +22,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.+(scss|css)": [
-      "prettier --write",
-      "stylelint --fix",
-      "git add ."
-    ],
-    "src/**/*.+(js|ts|tsx|)": [
-      "prettier --write",
-      "eslint --fix",
-      "git add ."
-    ]
+    "*.tsx": "eslint --fix"
   },
   "packageManager": "pnpm@7.1.7"
 }
