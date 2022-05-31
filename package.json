@@ -9,6 +9,8 @@
   "author": "GaoXiuMei",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.1",
+    "@commitlint/config-conventional": "^17.0.0",
     "@types/react": "^17.0.44",
     "@umijs/fabric": "^2.10.2",
     "eslint": "^8.16.0",
