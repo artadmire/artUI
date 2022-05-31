@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "noImplicitThis": false // 是否在表达式和声明上有隐含的any类型时报错
+  },
+  "include": ["src/**/*", "docs/**/*", "test/**/*"]
+}
