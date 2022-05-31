@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
+    "eslint": "eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "GaoXiuMei",
