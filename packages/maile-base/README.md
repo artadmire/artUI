@@ -3,8 +3,7 @@ name: Card
 route: /
 ---
 
-import { Playground, Props } from 'docz';
-import Card from './';
+import { Playground, Props } from 'docz'; import Card from './';
 
 # Card
 

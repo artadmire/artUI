@@ -1,3 +1,3 @@
-import babelConfig from "../../rollup.config";
+import babelConfig from '../../rollup.config';
 
 export default babelConfig;

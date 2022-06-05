@@ -9,5 +9,5 @@ describe('react-components', () => {
     render(Card());
     const cardFont = screen.getByText(/Card/i);
     expect(cardFont).toBeTruthy();
-  })
-})
+  });
+});

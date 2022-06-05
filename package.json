@@ -7,7 +7,7 @@
     "prepare": "husky install",
     "eslint": "eslint --fix",
     "stylelint": "stylelint 'packages/**/*.css' --fix",
-    "prettier": "prettier --write",
+    "prettier": "prettier -c --write **/*",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "GaoXiuMei",
@@ -21,7 +21,11 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.4.3",
     "prettier": "^2.6.2",
-    "stylelint": "^14.8.5"
+    "stylelint": "^14.8.5",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0"
   },
   "husky": {
     "hooks": {
