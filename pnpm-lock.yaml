@@ -54,6 +54,7 @@ importers:
       acorn-jsx: ^5.3.2
       docz: 2.3.0
       jest: ^27.5.1
+      maile-utils: workspace:^1.0.0
       postcss: ^8.4.12
       react: ^17.0.2
       react-dom: ^17.0.2
@@ -63,6 +64,7 @@ importers:
     dependencies:
       '@rollup/plugin-commonjs': registry.npmmirror.com/@rollup/plugin-commonjs/21.1.0_rollup@2.75.6
       '@rollup/plugin-node-resolve': registry.npmmirror.com/@rollup/plugin-node-resolve/13.3.0_rollup@2.75.6
+      maile-utils: link:../maile-utils
     devDependencies:
       '@babel/core': registry.npmmirror.com/@babel/core/7.18.2
       '@babel/preset-env': registry.npmmirror.com/@babel/preset-env/7.18.2_@babel+core@7.18.2
@@ -10185,7 +10187,7 @@ packages:
   registry.npmmirror.com/event-source-polyfill/1.0.26:
     resolution: {integrity: sha512-hQxu6sN1Eq4JjoI7ITdQeGGUN193A2ra83qC0Ltm9I2UJVAten3OFVN6k5RX4YWeCS0BoC8xg/5czOCIHVosQg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/event-source-polyfill/-/event-source-polyfill-1.0.25.tgz}
     name: event-source-polyfill
-    version: 1.0.26
+    version: 1.0.25
     deprecated: '[WARNING] Use 1.0.25 instead of 1.0.26, reason: Undesired Behavior https://security.snyk.io/vuln/SNYK-JS-EVENTSOURCEPOLYFILL-2429580, issues: https://github.com/Yaffle/EventSource/issues/199'
     dev: true
 
@@ -16108,6 +16110,8 @@ packages:
     resolution: {integrity: sha512-Qlox3wRM/Q4Ww9rv1cBmYKNJwWVX/WC+eA3+1S3Fv4EOhrqyp812ZEfVFKQk0AP6RfzmPUUOwEZBbJ8IRt8SOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/match-sorter/-/match-sorter-3.1.1.tgz}
     name: match-sorter
     version: 3.1.1
+    dependencies:
+      remove-accents: registry.npmmirror.com/remove-accents/0.4.2
     dev: true
     bundledDependencies:
       - remove-accents
@@ -21043,6 +21047,12 @@ packages:
       remark-parse: registry.npmmirror.com/remark-parse/6.0.3
       remark-stringify: registry.npmmirror.com/remark-stringify/6.0.4
       unified: registry.npmmirror.com/unified/7.1.0
+    dev: true
+
+  registry.npmmirror.com/remove-accents/0.4.2:
+    resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/remove-accents/-/remove-accents-0.4.2.tgz}
+    name: remove-accents
+    version: 0.4.2
     dev: true
 
   registry.npmmirror.com/remove-trailing-separator/1.1.0:
