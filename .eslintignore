@@ -1,4 +1,16 @@
-es
-lib
-dist
+
+
+typings
+es/**/*
+lib/**/*
 node_modules
+dist
+coverage
+**/*.d.ts
+
+# Scripts
+
+scripts/**/*
+packages/**/test/*.test.js
+packages/**/babel.config.js
+.eslintrc.js
