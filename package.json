@@ -1,13 +1,11 @@
 {
-  "name": "react-components",
+  "name": "maile",
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm",
     "test": ""
   },
   "author": "GaoXiuMei",
