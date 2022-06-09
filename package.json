@@ -7,6 +7,16 @@
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
     "clean": "rm -rf node_modules **/*/node_modules",
+    "install:vite": "pnpm i -r --filter vite-ts",
+    "start:vite": "pnpm -C ./examples/vite-ts dev ",
+    "build:ui":"pnpm -C ./packages/card build ",
+    "install:utils": "pnpm i -r --filter @maile/utils",
+    "build:utils":"pnpm -C ./packages/utils build ",
+    "install:card": "pnpm i -r --filter @maile/card",
+    "build:card":"pnpm -C ./packages/card build ",
+    "lint:eslint": "eslint --cache --max-warnings 0  \"packages/**/*.{ts,tsx}\" --fix",
+    "lint:prettier": "prettier --write  \"packages/**/*.{js,json,tsx,css,less,scss,html,md}\"",
+    "lint:stylelint": "stylelint --cache --fix \"packages/**/*.{postcss,css,scss}\" ",
     "test": ""
   },
   "author": "GaoXiuMei",
@@ -30,9 +40,10 @@
     "stylelint-config-standard": "^25.0.0",
     "typescript": "^4.7.3"
   },
+
   "lint-staged": {
-    "*.{ts,tsx,js,vue,less}": "prettier --write",
-    "*.{ts,tsx,js}": "eslint --fix",
-    "*.{vue,css,less}": "stylelint './packages/maile-ui/src/**/*.css' --fix"
+    "*.{ts,tsx,js,vue,less}": "prettier --write 'packages/**/*.{json,tsx,css,less,scss,html,md,ts}' ",
+    "*.{ts,tsx,js}": "eslint  'packages/**/*.{jsx,ts,tsx}' --fix",
+    "*.{vue,css,less}": "stylelint './packages/**/src/**/*.css' --fix"
   }
 }

@@ -1,9 +1,10 @@
 {
-  "name": "@maile/ui",
+  "name": "@maile/card",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "type": "module",
+  "main": "index.ts",
+  "module": "index.ts",
+  "types": "dist/card.cjs.d.ts",
   "scripts": {
     "build": "rollup -c"
   }, 

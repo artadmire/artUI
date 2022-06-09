@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { Card } from '@maile/card';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -15,6 +15,7 @@ function App() {
             count is: {count}
           </button>
         </p>
+        <Card />
       </header>
     </div>
   );

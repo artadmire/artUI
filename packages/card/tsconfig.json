@@ -23,6 +23,8 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "baseUrl": "./",
+    "outDir": "./ts/dist", // 输出目录
+    "declarationDir": "./ts/lib", // 类型声明文件的输出目录
     "paths": {
       "*": ["src/*", "node_modules/*"]
     },

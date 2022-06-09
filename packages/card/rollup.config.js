@@ -6,7 +6,7 @@ import postcss from 'rollup-plugin-postcss';
 import jsx from 'acorn-jsx';
 
 export default {
-  input: './src/index.ts',
+  input: './index.ts',
   acornInjectPlugins: [jsx()],
   plugins: [
     resolve(),
@@ -24,13 +24,22 @@ export default {
   ],
   output: [
     {
-      file: 'dist/index.js',
+      file: 'dist/card.cjs.js',
       format: 'cjs',
       plugins: [
         getBabelOutputPlugin({
           presets: ['@babel/preset-env'],
         }),
       ],
+    },
+    {
+      file: 'dist/card.es.js',
+      format: 'es',
+    },
+    {
+      file: 'dist/card.umd.js',
+      format: 'umd',
+      name: 'maileCard',
     },
   ],
 };

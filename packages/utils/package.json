@@ -4,7 +4,6 @@
   "description": "",
   "author": "maile",
   "main": "src/index.ts",
-  "type": "module",
   "scripts": {
     "build": "rollup -c"
   },
